@@ -1,4 +1,0 @@
-Clave keystore: Sapev@keystore
-
-Alias key: Sapev
-Clave key: Sapev@key
