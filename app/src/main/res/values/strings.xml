@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Aedes Alert, Support to collect data to combat dengue
+  ~ Copyright (C) 2017 Fundación Anesvad
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="network_error">Error de conexión al servidor</string>
+
+    <string name="login_login_required">Usuario requerido</string>
+    <string name="login_password_required">Contraseña requerida</string>
+    <string name="login_error">Usuario y/o contraseña incorrecto</string>
+
+    <string name="plan_list_title">Planes asignados</string>
+    <string name="plan_list_empty">No hay ningún plan disponible</string>
+    <string name="plan_today_none">No hay ningún plan disponible para hoy</string>
+    <string name="plan_list_error_sync">Error al sincronizar el plan</string>
+    <string name="plan_list_error_load">Error al cargar el listado de planes</string>
+    <string name="plan_sync_error_delete_plan">Error al borrar el plan</string>
+    <string name="plan_sync_error_user">Usuario no autorizado</string>
+    <string name="plan_sync_error">Error durante la sincronización del plan</string>
+    <string name="plan_sync_error_user_conexion">Error de conexion con el servidor API</string>
+    <string name="plan_sync_error_conexion">Error de conexion con el servidor API durante la sincronización</string>
+
+    <string name="areas_progress_title">Progreso visitas</string>
+    <string name="areas_progress_value" formatted="false">%d DE %d</string>
+
+    <string name="house_create_title">Nueva vivienda</string>
+    <string name="house_view_title">Vivienda</string>
+    <string name="house_address_required">Dirección requerida</string>
+    <string name="house_numAddress_required">Número requerido</string>
+    <string name="house_abandoned">Abandonada</string>
+    <string name="house_closed">Cerrada</string>
+    <string name="house_renuente">Renuente</string>
+    <string name="house_inspection">Inspección</string>
+    <string name="house_convert_abandoned">Reconvertir Abandonada</string>
+    <string name="house_convert_closed">Reconvertir Cerrada</string>
+    <string name="house_convert_renuente">Reconvertir Renuente</string>
+    <string name="house_convert_inspection">Reconvertir Inspección</string>
+    <string name="house_picture">Sacar imagen de la vivienda</string>
+    <string name="house_list_error">Error al cargar las viviendas</string>
+    <string name="house_qr_error">Error obteniendo la vivienda</string>
+    <string name="house_summary_error">Error obteniendo los datos</string>
+
+    <string name="house_list_no_data">No hay viviendas</string>
+    <string name="sample_list_no_data">No hay muestras</string>
+    <string name="inventory_no_data">No hay datos de inventarios</string>
+
+    <string name="visit_title">Nueva visita</string>
+    <string name="visit_code_title">Introducir código vivienda</string>
+    <string name="visit_code_next">Siguiente</string>
+    <string name="visit_code_ubigeo">Código UBIGEO</string>
+    <string name="visit_code_qr">Código QR</string>
+    <string name="visit_code_area">Código zona</string>
+    <string name="visit_code_house">Código vivienda</string>
+    <string name="visit_code_qr_empty">Ninguno</string>
+    <string name="visit_code_house_required">Código vivienda requerido</string>
+    <string name="visit_code_house_error">Ya existe una vivienda con el código indicado</string>
+    <string name="visit_deleted_error">Error al borrar la visita</string>
+    <string name="visit_resume">Última Visita</string>
+    <string name="visit_save_error">Error guardando la visita</string>
+    <string name="visit_gps_title">Capturar posición GPS</string>
+    <string name="visit_gps_ommit">Omitir</string>
+    <string name="visit_save_qr_error">Error guardando el QR</string>
+
+    <string name="gps_none">Esperando posición…</string>
+    <string name="gps_accuracy" formatted="false">Precisión %dm</string>
+
+    <string name="inspection_title">Visita</string>
+    <string name="inventory_list_title">Inventario</string>
+    <string name="feverish_list_title">Febriles</string>
+    <string name="feverish_list_empty">No hay febriles</string>
+    <string name="feverish_list_error">Error al cargar los febriles</string>
+    <string name="feverish_list_persons">Selección de habitante</string>
+    <string name="feverish_recomendatios_title">Recomendaciones</string>
+    <string name="feverish_recomendatios">Tiene que acudir al centro de salud</string>
+    <string name="feverish_persons_empty">AVISO: Debe dar de alta un nuevo habitante para poder seleccionarlo como febril.</string>
+    <string name="visits_summary_title">Resumen visitas</string>
+    <string name="houses_summary_title">Casas</string>
+    <string name="inventory_summary_title">Inventarios</string>
+    <string name="samples_summary_title">Muestras</string>
+    <string name="samples_list_error">Error al cargar las muestras</string>
+    <string name="inventory_list_error">Error al cargar el inventario</string>
+
+    <string name="symptom_list_empty">No hay síntomas</string>
+    <string name="symptom_list_error">Error al cargar los síntomas</string>
+    <string name="symptom_list_title">Seleccione síntomas</string>
+    <string name="symptom_save_error">Error al guardar los síntomas</string>
+
+    <string name="inventory_comment">Identificación recipiente</string>
+    <string name="inventory_focus">¿Es foco?</string>
+    <string name="inventory_treated">¿Tratado?</string>
+    <string name="inventory_destroyed">¿Destruido?</string>
+    <string name="inventory_summary_notice">AVISO: Se ha tratado o destruido sin realizar muestra.</string>
+    <string name="inventory_summary_alert">ALERTA: Muestra realizada sin tratar o destruir.</string>
+    <string name="inventory_packets" formatted="false">%d %s</string>
+    <string name="inventory_registry_deleted">Inventario eliminado</string>
+    <string name="inventory_sample" formatted="false">Muestra %s</string>
+    <string name="inventory_sample_packets" formatted="false">Muestra %s - %d %s</string>
+    <string name="inventory_delete_error">Error al borrar el inventario</string>
+    <string name="inventory_delete_visit_error">Error al borrar la visita</string>
+    <string name="inventory_restore_error">Error cargando el inventario</string>
+    <string name="inventory_select_state">Seleccionar un estado</string>
+
+    <string name="person_list_title">Habitantes</string>
+    <string name="person_list_empty">No hay habitantes</string>
+    <string name="person_list_error">Error al cargar los habitantes</string>
+
+    <string name="person_detail_title">Habitante</string>
+    <string name="person_detail_error">Error al cargar el habitante</string>
+    <string name="person_detail_name_required">Debe introducir un nombre</string>
+    <string name="person_not_delete_dialog">No se puede eliminar el habitante porque está registrado como febril</string>
+
+
+    <string name="history_empty">No hay histórico</string>
+    <string name="history_list_error">Error al cargar el historico</string>
+
+    <string name="volume_title">Calculadora de moños</string>
+    <string name="volume_type">Selectionar tipo de recipiente</string>
+    <string name="volume_dimensions">Introducir dimensiones</string>
+    <string name="volume_type_cube">Recipiente rectangular</string>
+    <string name="volume_type_cylinder">Recipiente cilíndrico</string>
+    <string name="volume_liters">Introducir litros del recipiente</string>
+
+    <string name="title_house_code">Introducir código vivienda</string>
+    <string name="title_house_gps">Capturar posición GPS</string>
+    <string name="title_house_list" formatted="false">Viviendas %s</string>
+    <string name="title_house_not_found">Vivienda no encontrada</string>
+    <string name="title_qr_scan_result">Resultado escaneo</string>
+    <string name="title_confirm_back">Existen cambios sin guardar</string>
+
+    <string name="area_unlock_error">Error activando manzana suplente</string>
+    <string name="area_unlock_success">Manzana suplente activada correctamente</string>
+    <string name="area_unlock_fail">Pin no válido</string>
+
+    <string name="message_error">Ha ocurrido un error (%d)</string>
+    <string name="message_qr_not_found">No se encontrado ninguna vivienda asociada al código QR escaneado</string>
+    <string name="message_qr_not_valid">El código QR escaneado no es válido</string>
+    <string name="message_sync_confirm">¿Está seguro de querer sincronizar los datos del plan en curso?\n\nLa sincronización dará por finalizado el plan y no se podrán registrar más visitas.</string>
+    <string name="message_sync_not_visits">No es posible realizar la sincronización porque no se han registrados visitas en el plan actual.</string>
+    <string name="message_sync_not_connection">No es posible realizar la sincronización en estos momentos porque no tiene conexión.</string>
+    <string name="message_units_set_to_one">Al marcar foco o tratado no se permite tener más de una unidad.\n\nTendrá que dar de alta la unidad restante aparte.</string>
+    <string name="message_units_set_to_one_multiple">Al marcar foco o tratado no se permite tener más de una unidad.\n\nTendrá que dar de alta las %d unidades restantes aparte.</string>
+    <string name="message_confirm_back">¿Está seguro de querer salir?</string>
+    <string name="message_registry_delete">¿Está seguro de querer eliminar el registro?</string>
+    <string name="message_house_delete">¿Está seguro de querer eliminar la vivienda?</string>
+    <string name="message_visit_delete">¿Está seguro de querer eliminar la visita?</string>
+    <string name="message_error_connection">No tiene conexión</string>
+    <string name="message_send_logs">Logs enviados correctamente</string>
+    <string name="message_get_data_error">Error obteniendo los datos</string>
+    <string name="message_error_info">Ha ocurrido un error</string>
+    <string name="message_send_email">Enviando email</string>
+    <string name="send_email_logs_error">Error enviando el email</string>
+    <string name="send_email_ok">Email enviado correctamente</string>
+    <string name="message_close_session">¿Está seguro de querer cerrar la sesión?\n\nLas visitas realizadas se borrarán y no será posible recuperar los datos registrados.\n\nSerá necesario volver a descargar el plan y volver a introducir todas las visitas.</string>
+    <string name="message_hint_street_name">Nombre de la calle, apellido de la familia, etc.</string>
+    <string name="message_hint_street_number">Número de la calle, código contador eléctrico, etc.</string>
+    <string name="message_unlock_area">Introduce el pin facilitado por el responsable para activar una manzana suplente:</string>
+
+    <string name="address">Dirección</string>
+    <string name="age">Edad</string>
+    <string name="age_format" formatted="false">%d años</string>
+    <string name="areas">Zonas</string>
+    <string name="birthday">Fecha nacimiento</string>
+    <string name="card_id">DNI</string>
+    <string name="centimeters_unit">cm</string>
+    <string name="liters_unit">litros</string>
+    <string name="code">Código</string>
+    <string name="code_qr">Código QR</string>
+    <string name="comments">Comentarios</string>
+    <string name="connecting">Conectando…</string>
+    <string name="convert_visit">Reconvertir visita</string>
+    <string name="date">Fecha</string>
+    <string name="depth">Ancho</string>
+    <string name="destroyed">Destruido</string>
+    <string name="diameter">Diámetro</string>
+    <string name="downloading_plan">Descargando plan…</string>
+    <string name="empty"></string>
+    <string name="female">Mujer</string>
+    <string name="feverish">Febriles</string>
+    <string name="filters">FILTROS</string>
+    <string name="focus">Foco</string>
+    <string name="genre">Sexo</string>
+    <string name="gps_no">No</string>
+    <string name="gps_no_searching">No (Buscando…)</string>
+    <string name="gps_position">Posición GPS</string>
+    <string name="gps_yes">Sí</string>
+    <string name="history">Histórico</string>
+    <string name="house">Vivienda</string>
+    <string name="houses">Viviendas</string>
+    <string name="house_format" formatted="false">%04d</string>
+    <string name="house_saved">Vivienda guardada</string>
+    <string name="house_saved_error">Error al guardar la vivienda</string>
+    <string name="house_deleted_error">Error al borrar la vivienda</string>
+    <string name="house_state_closed">Vivienda cerrada</string>
+    <string name="house_state_deserted">Vivienda abandonada</string>
+    <string name="house_state_reluctant">Vivienda renuente</string>
+    <string name="inspected">Inspeccionado</string>
+    <string name="inspection_validate">Validar inspección</string>
+    <string name="inspections_count" formatted="false">%d inspecciones</string>
+    <string name="inspections_none">Sin inspecciones</string>
+    <string name="inspections_one">1 inspección</string>
+    <string name="larvicide_consumption">Consumo larvicida</string>
+    <string name="last_visit">Última Visita</string>
+    <string name="male">Hombre</string>
+    <string name="name">Nombre</string>
+    <string name="never_visited">Nunca visitada</string>
+    <string name="new_visit">Nueva visita</string>
+    <string name="number">Número</string>
+    <string name="order_by">ORDENAR POR</string>
+    <string name="password">Contraseña</string>
+    <string name="person">Habitante</string>
+    <string name="plan">Plan</string>
+    <string name="plan_reconversion">Reconversión</string>
+    <string name="plan_synchronized">Plan sincronizado correctamente</string>
+    <string name="processing_plan">Procesando visitas…</string>
+    <string name="qr_saved">Código QR guardado</string>
+    <string name="requalify">Reconvertir</string>
+    <string name="result">Resultado</string>
+    <string name="retrieving_available_plans">Recuperando planes disponibles…</string>
+    <string name="sample">Muestra</string>
+    <string name="samples">Muestras</string>
+    <string name="summary">Resumen</string>
+    <string name="street">Calle</string>
+    <string name="street_format">%1$s, %2$s</string>
+    <string name="treated">Tratado</string>
+    <string name="units">Unidades</string>
+    <string name="uploading_plan">Subiendo visitas…</string>
+    <string name="units_set_to_one">Unidades modificadas a 1</string>
+    <string name="user">Usuario</string>
+    <string name="validating_user">Validando usuario…</string>
+    <string name="value_required">Valor requirido</string>
+    <string name="version" formatted="false">Versión %s</string>
+    <string name="visit_in_progress">Visita en curso</string>
+    <string name="water_height">Altura agua usual</string>
+    <string name="weight_grams" formatted="false">%.1f %s</string>
+    <string name="width">Largo</string>
+    <string name="without_visit">Sin visita</string>
+    <string name="years">años</string>
+    <string name="sample_street_format">%1$s, %2$s</string>
+    <string name="sample_code_format">&lt;b>%1$s&lt;/b> - %2$s</string>
+
+    <string name="error_plan_load">Error cargando el plan</string>
+    <string name="error_registry_save">Error al guardar el registro</string>
+    <string name="error_registry_packets_empty">Debe introducir el número de moños</string>
+    <string name="error_registry_units_empty">Debe introducir las unidades</string>
+    <string name="error_registry_states_empty">Debe seleccionar por lo menos un estado del vector</string>
+
+    <string name="dialog_save_changes">¿Desea guardar los cambios realizados?</string>
+    <string name="dialog_visit_confirm">Existe otra visita en curso sin terminar. ¿Está seguro de querer empezar otra?</string>
+    <string name="dialog_visit_confirm_convert">¿Está seguro de querer reconvertir la visita? (Se eliminará la visita actual y se creará una nueva)</string>
+
+    <string name="dialog_delete_person">Borrar habitante</string>
+    <string name="dialog_delete_person_confirm">¿Desea borrar el habitante?</string>
+
+    <string name="dialog_pakets_calculate_liters">Litros recipiente</string>
+    <string name="dialog_pakets_calculate_dimensions">Dimensiones recipiente</string>
+    <string name="dialog_pakets_calculate_title">Seleccionar método de cálculo</string>
+
+    <string name="action_accept">Aceptar</string>
+    <string name="action_back">Atrás</string>
+    <string name="action_calculate">Calcular</string>
+    <string name="action_camera_qr">Capturar QR</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_close_session">Cerrar sesión</string>
+    <string name="action_summary">Resumen visitas</string>
+    <string name="action_send_logs">Enviar logs</string>
+    <string name="action_done">Guardar</string>
+    <string name="action_edit_visit">Editar visita</string>
+    <string name="action_feverish_add">Añadir febril</string>
+    <string name="action_generate_visit">Generar visita</string>
+    <string name="action_history">Historico</string>
+    <string name="action_image">Sacar imagen</string>
+    <string name="action_login">Iniciar sesión</string>
+    <string name="action_next">Siguiente</string>
+    <string name="action_new">Nuevo</string>
+    <string name="action_no">No</string>
+    <string name="action_omit">Omitir</string>
+    <string name="action_omit_time">Omitir (%d)</string>
+    <string name="action_person_add">Añadir persona</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_sync">Sincronizar</string>
+    <string name="action_terminate">Terminar</string>
+    <string name="action_yes">Sí</string>
+    <string name="action_alert">Aviso</string>
+    <string name="action_delete_house">Eliminar vivienda</string>
+    <string name="action_delete_visit">Eliminar visita</string>
+    <string name="action_send">Enviando fichero por email</string>
+    <string name="action_unlock_area">Activar manzana suplente</string>
+    <string name="action_unlock">Activar</string>
+
+    <string name="houses_inspected">Inspeccionadas</string>
+    <string name="houses_focus">Focos</string>
+    <string name="houses_closed">Cerradas</string>
+    <string name="houses_reluctant">Renuentes</string>
+    <string name="houses_abandoned">Abandonadas</string>
+    <string name="houses_treated">Con depósitos tratados</string>
+    <string name="houses_destroyed">Con depósitos destruidos</string>
+    <string name="houses_larvicide">Larvicida total</string>
+    <string name="houses_persons">Número residentes</string>
+    <string name="houses_febriles">Número febriles</string>
+    <string name="houses_reconverted">Reconvertidas</string>
+</resources>

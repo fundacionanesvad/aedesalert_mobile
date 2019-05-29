@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Aedes Alert, Support to collect data to combat dengue
+  ~ Copyright (C) 2017 Fundación Anesvad
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_camera_qr"
+        android:icon="@drawable/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_sort"
+        android:title="@string/action_camera_qr"
+        android:icon="@drawable/action_sort"
+        app:showAsAction="always">
+
+        <menu>
+
+            <group android:id="@+id/filter" android:checkableBehavior="all">
+
+                <item android:id="@+id/filters"
+                    android:title="@string/filters"
+                    android:enabled="false"
+                    android:checkable="false"/>
+
+                <item android:id="@+id/filter_inspected"
+                    android:title="@string/inspected"/>
+
+                <item android:id="@+id/filter_requalify"
+                    android:title="@string/requalify"/>
+
+                <item android:id="@+id/filter_focus"
+                    android:title="@string/focus"/>
+
+                <item android:id="@+id/filter_feverish"
+                    android:title="@string/feverish"/>
+
+            </group>
+
+            <group android:id="@+id/group_sort" android:checkableBehavior="single">
+
+                <item android:id="@+id/sort_title"
+                    android:title="@string/order_by"
+                    android:enabled="false"
+                    android:checkable="false"/>
+
+                <item android:id="@+id/sort_address"
+                    android:title="@string/address"
+                    android:checked="true"/>
+
+                <item android:id="@+id/sort_date"
+                    android:title="@string/date"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/action_camera"
+        android:title="@string/action_camera_qr"
+        android:icon="@drawable/action_qr"
+        app:showAsAction="always" />
+
+</menu>

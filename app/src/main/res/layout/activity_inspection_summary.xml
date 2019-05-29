@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Aedes Alert, Support to collect data to combat dengue
+  ~ Copyright (C) 2017 Fundación Anesvad
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                style="@style/Caption"/>
+
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:maxLength="250"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary"
+                android:layout_marginTop="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inspected"
+                        style="@style/Title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus"
+                        style="@style/Title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/treated"
+                        style="@style/Title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/destroyed"
+                        style="@style/Title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samples"
+                        android:paddingTop="16dp"
+                        style="@style/Title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feverish"
+                        style="@style/Title"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/larvicide_consumption"
+                        style="@style/Title"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/inspected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="11"
+                        style="@style/Title.Primary"/>
+
+                    <TextView
+                        android:id="@+id/focus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="2"
+                        style="@style/Title.Primary"/>
+
+                    <TextView
+                        android:id="@+id/treated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="3"
+                        style="@style/Title.Primary"/>
+
+                    <TextView
+                        android:id="@+id/destroyed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="2"
+                        style="@style/Title.Primary"/>
+
+                    <TextView
+                        android:id="@+id/samples"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="2"
+                        android:paddingTop="16dp"
+                        style="@style/Title.Primary"/>
+
+                    <TextView
+                        android:id="@+id/feverish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="1"
+                        style="@style/Title.Primary"/>
+
+                    <TextView
+                        android:id="@+id/larvicide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="20 gr"
+                        style="@style/Title.Primary"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/action_done"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_anchor="@+id/appbar"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

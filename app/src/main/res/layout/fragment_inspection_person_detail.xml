@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Aedes Alert, Support to collect data to combat dengue
+  ~ Copyright (C) 2017 Fundación Anesvad
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Nombre"
+                    style="@style/Title"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:paddingBottom="8dp"/>
+
+                <RadioGroup
+                    android:id="@+id/genre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Sexo"
+                        style="@style/Title"/>
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="16dp"
+                        android:text="Hombre"
+                        style="@style/Title.Empty"/>
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="8dp"
+                        android:text="Mujer"
+                        style="@style/Title.Empty"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <RadioGroup
+                        android:id="@+id/date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RadioButton
+                            android:id="@+id/age"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Edad"
+                            style="@style/Title"/>
+
+                        <RadioButton
+                            android:id="@+id/birthday"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Nacimiento"
+                            style="@style/Title"/>
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/age_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/icon_age_grey"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical|right"
+                            android:text="18 años"
+                            style="@style/Title.Empty"/>
+
+                        <TextView
+                            android:id="@+id/birthday_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/icon_plan_grey"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical|right"
+                            android:text="15/05/79"
+                            style="@style/Title.Empty"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/include_progress" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:text="@string/person_detail_error"
+        style="@style/Title.Error"/>
+
+</RelativeLayout>

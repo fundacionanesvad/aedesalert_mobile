@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Aedes Alert, Support to collect data to combat dengue
+  ~ Copyright (C) 2017 Fundación Anesvad
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string-array name="others">
+        <item>Bacín</item>
+        <item>Bebedero</item>
+        <item>Bidón</item>
+        <item>Botella</item>
+        <item>Caja</item>
+        <item>Chancha</item>
+        <item>Chapa</item>
+        <item>Charco de agua</item>
+        <item>Contenedor</item>
+        <item>Ducha</item>
+        <item>Frasco</item>
+        <item>Fuente de agua</item>
+        <item>Galonera</item>
+        <item>Jarra</item>
+        <item>Jarro</item>
+        <item>Lata</item>
+        <item>Lavadero</item>
+        <item>Naja de plantas</item>
+        <item>Papelera</item>
+        <item>Pecera</item>
+        <item>Pileta</item>
+        <item>Piscina infantil</item>
+        <item>Plato descartable</item>
+        <item>Porta escobilla</item>
+        <item>Punto de agua en parque</item>
+        <item>Tanque de water</item>
+        <item>Tapa</item>
+        <item>Taper</item>
+        <item>Tarro abierto</item>
+        <item>Taza de baño</item>
+        <item>Taza</item>
+        <item>Tina de baño</item>
+    </string-array>
+</resources>
